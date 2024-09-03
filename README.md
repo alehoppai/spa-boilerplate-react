@@ -17,28 +17,33 @@ This project is a boilerplate for quickly setting up a React application with Fi
 
 ## Project Structure
 
-- `/app`: Contains the main application code
+- `/app`: Contains the global application code. Configs, generated code, types, contexts everything that will be used globally.
 - `/routes`: Defines the application routes
-- `/public`: Output directory for the production build
+- `/public`: Output directory for the production build (for Firebase)
+- `/components`: Reusable UI components
+- `/utils`: Utility functions and helpers
+- `/hooks`: Custom React hooks
+
 
 ## Getting Started
 
 1. Clone the repository
 2. Install dependencies:
    ```
-   npm install
+   pnpm install
    ```
 3. Start the development server:
    ```
-   npm run dev
+   pnpm run dev
    ```
+4. Initialize firebase
 
 ## Available Scripts
 
-- `npm run dev`: Start the development server
-- `npm run build`: Build the project for production
-- `npm run lint`: Run ESLint
-- `npm run preview`: Preview the production build
+- `pnpm dev`: Start the development server
+- `pnpm build`: Build the project for production
+- `pnpm lint`: Run ESLint
+- `pnpm preview`: Preview the production build
 
 ## Configuration
 
